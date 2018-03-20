@@ -1,0 +1,243 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+	</style>
+	<title>Frozen Yogurt Shop</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header" style="background-color: #ff4da9;">
+			<div>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation" style="color:  #CCFF66;">
+					<li class="selected">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="menu">
+						<a href="about.html">About</a>
+						<ul class="primary">
+							<li>
+								<a href="product.html">Product</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body" class="home">
+			<!-- <div class="header">
+				<!-- Slideshow co --><!-- ntainer --> 
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/citric.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/smoothies.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/cover1.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+				<!-- <div>
+					<a href="product.html">Biodrink Delight</a>
+				</div> --> 
+
+			
+			<div class="body">
+				<div>
+					<div>
+						<h1>About Us</h1>
+						<h2>The Twist of Healthy and Natural Fruit Juice</h2>
+						<p>At FruitCam SARL,our main concern is the manufacturing of Natural, Tasty, Nutritional and Medicinal drinks.We Transform, preserve and market fruits, roots, flower petals and vegetables , natural fruit juices, syrups, food supplements, jams, tea and wines</p>
+					</div>
+					<img src="images/yogurt.jpg" alt="">
+				</div>
+			</div>
+			<div class="footer">
+				<div>
+					<ul>
+						<li>
+							<a href="product.html" class="product"></a>
+							<h1>PRODUCTS</h1>
+						</li>
+						<li>
+							<a href="about.html" class="about"></a>
+							<h1>OUR STORY</h1>
+						</li>
+						<li>
+							<a href="product.html" class="flavor"></a>
+							<h1>FLAVORS</h1>
+						</li>
+						<li>
+							<a href="contact.html" class="contact"></a>
+							<h1>OUR LOCATION</h1>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<div class="connect">
+					<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>
+					<a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+					<a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>
+				</div>
+				<p>&copy; 2018 FruitCaM Sarl. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+
+</body>
+</html>
